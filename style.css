@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:  #E5E5E5;
+    /* margin: 0;
+    padding: 0; */
+}
+
+/* main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+  
+
+/* navbar :starts here  */
+.navbar a{
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+
+  
+}
+.navbar a:hover{
+    color: aliceblue;
+}
+nav{
+    background-color: #562EFF;
+    padding: 10px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*..........................\
+ banner section starts here 
+............................ */
+
+.container{
+    margin-top: 5%;
+}
+
+.top-banner{
+    display: flex;
+    background-color: #161616;
+    color: #FFFFFF;
+    padding-top: 5px;
+    /* Width: 1350px;
+    Height: 646px; */
+    /* border: 2px solid greenyellow; */
+}
+.heading-text{
+    font-size: 2.5em;
+    margin:0;
+}
+.half-width{
+    width: 40%;
+    padding-left: 5%; 
+     margin-left: 5%;
+   
+    /* border: 2px solid red; */
+}
+.half-width img{
+    width: 70%;
+}
+.btn-live{
+    background-color:#DD0000;
+    color:#E5E5E5;
+    border-radius: 5px;
+    padding:5px;
+    font-weight: 700;
+    font-size: 1.2em;
+}.btn-live:hover{
+    background-color: darkgoldenrod;
+}
+
+/* players section  */
+.button-group{
+    display: flex;
+    flex-direction:  column;
+    width: 252px;
+    height: 252px;
+    padding-left: 2%;
+    margin-left: 5%;
+    font-size: 2em;
+    align-items: center;
+}
+.button-group button{
+    width: 252px;
+    height: 64px;
+    padding: 10px;
+    margin:5px;
+}
+.button-group .blog{
+    background-color:red;
+    color:#E5E5E5;
+}
+
+.players-container{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    /* Width: 312px;
+    Height: 362px;
+    border: 2px solid lightgray;
+    border-radius: 5px; */
+}
+.player span{
+    margin-left: 10px;
+    padding-right: 5px;
+}
+
+.side-part{
+ width: 312px;
+ height: 312px;
+ background-color:#161616;
+}
