@@ -2,16 +2,8 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color:  #E5E5E5;
-    /* margin: 0;
-    padding: 0; */
+   
 }
-
-/* main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-  
 
 /* navbar :starts here  */
 .navbar a{
@@ -27,7 +19,6 @@ body{
 nav{
     background-color: #562EFF;
     padding: 10px;
-   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,9 +37,14 @@ nav{
     background-color: #161616;
     color: #FFFFFF;
     padding-top: 5px;
-    /* Width: 1350px;
-    Height: 646px; */
+    margin-top: 0;
+    Width: 1320px;
+    Height: 500px;
     /* border: 2px solid greenyellow; */
+}
+.top-textField{
+    margin-top: 0px;
+    padding-top: 5%;
 }
 .heading-text{
     font-size: 2.5em;
@@ -62,7 +58,7 @@ nav{
     /* border: 2px solid red; */
 }
 .half-width img{
-    width: 70%;
+    width: 85%;
 }
 .btn-live{
     background-color:#DD0000;
@@ -92,7 +88,7 @@ nav{
     padding: 10px;
     margin:5px;
 }
-.button-group .blog{
+.button-group .blog ,.upcoming-match{
     background-color:red;
     color:#E5E5E5;
 }
