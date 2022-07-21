@@ -5,31 +5,15 @@ body{
    
 }
 
-/* navbar :starts here  */
-.navbar a{
-    text-decoration: none;
-    color: black;
-    margin: 0 10px;
 
-  
-}
-.navbar a:hover{
-    color: aliceblue;
-}
-nav{
-    background-color: #562EFF;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 /*..........................\
  banner section starts here 
 ............................ */
 
 .container{
-    margin-top: 5%;
+    margin-top: 0;
+    margin-bottom: 5%;
 }
 
 .top-banner{
@@ -54,12 +38,12 @@ nav{
     width: 40%;
     padding-left: 5%; 
      margin-left: 5%;
-   
-    /* border: 2px solid red; */
 }
+
 .half-width img{
     width: 85%;
 }
+
 .btn-live{
     background-color:#DD0000;
     color:#E5E5E5;
@@ -88,7 +72,7 @@ nav{
     padding: 10px;
     margin:5px;
 }
-.button-group .blog ,.upcoming-match{
+.button-group .blog {
     background-color:red;
     color:#E5E5E5;
 }
@@ -101,11 +85,6 @@ nav{
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-
-    /* Width: 312px;
-    Height: 362px;
-    border: 2px solid lightgray;
-    border-radius: 5px; */
 }
 .player span{
     margin-left: 10px;
@@ -116,4 +95,164 @@ nav{
  width: 312px;
  height: 312px;
  background-color:#161616;
+}
+
+
+/* ..............................
+    upcoming match starts here .
+................................ */
+
+.match{
+    background-color:red;
+    color:#E5E5E5;
+}
+.box{
+    display: flex;
+   
+    margin: 10px;
+    
+
+}
+
+.Upcoming-match{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: space-around;
+
+}
+.teams{
+    background-color: #E5E5E5;
+    border-radius: 10px;
+    width: 312px;
+    height: 242px;
+    border: 1px solid grey;
+   
+}
+.view{
+    background-color:#DD0000;
+    color:#E5E5E5;
+    border-radius: 5px;
+    padding:5px;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin: 5%;
+    display:none;
+}
+
+/* footer :starts here  */
+.navbar a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0 10px;
+
+  
+}
+.navbar a:hover{
+    color: aliceblue;
+}
+.bottom-navbar{
+    background-color: black;
+    padding: 10px;
+    width: 99%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+.bottom-navbar h2{
+    color:#E5E5E5;
+    font-size: 2em;
+    text-align: center;
+}
+
+.social{
+  
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: #161616;
+ 
+}
+.social a {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    color: #E5E5E5;
+}
+
+
+/* media query */
+
+/* mobile devices */
+@media  screen and (max-width:688px){
+  
+    .top-banner,.players-container{
+         width:auto;
+       display: grid;
+       grid-template-columns: 1fr;
+       margin-bottom: 5%;
+       padding:5%;
+    }
+    .half-width{
+        width: 100%;
+    }
+    .half-width img{
+        width: 50%;
+    }
+    .players-container{
+        
+        grid-template-columns: 1fr;
+    }
+    
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .bottom-navbar{
+        flex-direction: row;
+    }
+    .social{
+        display: block;
+    }
+}
+
+
+
+/* tablet devices */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+.view{
+    display:block;
+} 
+
+.top-banner,.players-container{
+  width:auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5%;
+  padding:5%;
+}   
+
+.players-container{
+        
+    grid-template-columns: 1fr;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.half-width img{
+    width: 500px;
+}
+.side-part{
+    display: inline;
+    width: 312px;
+    height: 312px;
+    background-color:#161616;
+   }
+
 }
